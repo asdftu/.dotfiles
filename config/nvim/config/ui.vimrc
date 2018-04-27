@@ -1,17 +1,12 @@
 " vim:fdm=marker
+let g:gruvbox_contrast_dark = 'soft'
+let g:gruvbox_contrast_light = 'hard'
 
-colorscheme solarized " Set the colorscheme
+colorscheme gruvbox " Set the colorscheme
 set background=dark
-let g:solarized_degrade   = 0
-let g:solarized_bold      = 1
-let g:solarized_underline = 1
-let g:solarized_italic    = 1
-let g:solarized_contrast  = "normal" " "normal"|   "high" or "low"
-let g:solarized_visibility= "normal" " "normal"|   "high" or "low"et background=dark
+
 if has('gui_running')
     set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete\ Mono:h13
-else
-    let g:solarized_termtrans=1
 endif
 
 " make the highlighting of tabs and other non-text less annoying
@@ -23,7 +18,6 @@ highlight Comment cterm=italic
 highlight htmlArg cterm=italic
 
 set number                  " show line numbers
-set relativenumber          " show relative line numbers
 
 set wrap                    " turn on line wrapping
 set wrapmargin=8            " wrap lines when coming within n characters from side
@@ -93,5 +87,3 @@ set tm=500
 if has('mouse')
 	set mouse=a
 endif
-
-

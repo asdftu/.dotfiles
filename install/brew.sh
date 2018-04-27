@@ -11,8 +11,9 @@ echo "=============================="
 # brew taps to execute
 taps=(
     'universal-ctags/universal-ctags'
-    'homebrew/homebrew-php'
     'neovim/neovim'
+    'osx-cross/avr'
+    'PX4/homebrew-px4'
 )
 
 # brew formulas to isntall
@@ -20,11 +21,9 @@ formulas=(
 # better terminal
      'Caskroom/cask/iterm2'
     
-# keyboard tweeks
-     'Caskroom/cask/karabiner'
-    
 # cli tools
      ack
+     ripgrep
      tree
      wget
     
@@ -32,9 +31,9 @@ formulas=(
      cmake
      '--HEAD universal-ctags'
      git
+     git-flow
      hub
      fzf
-     'macvim --override-system-vim'
      'reattach-to-user-namespace'
      tmux
      zsh
@@ -48,10 +47,15 @@ formulas=(
      tidy-html5
     
 # php envirionment with sniffer and packagemanager
-     php70
-     php70-msgpack 
+     php71
      phpmd
      composer
+
+# qmk keyboard firmware -- planck keyboard-
+     avr-gcc
+     dfu-programmer
+     gcc-arm-none-eabi
+
     
 # install neovim
      neovim
